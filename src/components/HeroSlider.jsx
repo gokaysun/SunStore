@@ -35,7 +35,7 @@ export default function HeroSlider() {
   const goPrev = () => setIndex((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <div className="relative w-full h-[500px] sm:h-[600px] overflow-hidden">
+    <div className="relative w-full h-[500px] sm:h-[600px]  overflow-hidden">
       {/* Slide görseli */}
       <img
         src={slides[index].image}
