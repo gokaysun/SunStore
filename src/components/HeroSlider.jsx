@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 
 const slides = [
   {
-    image: "src/assets/HPcantaliKadin.jpg", // sen ekleyeceksin
+    image: "src/assets/HPcantaliKadin.jpg", 
     heading: "SUMMER 2020",
     subheading: "NEW COLLECTION",
     description: "We know how large objects will act, but things on a small scale.",
   },
   {
-    image: "src/assets/HPcantaliKadin2.jpeg",
+    image: "src/assets/HPcantaliKadin.jpg",
     heading: "SUMMER 2020",
     subheading: "NEW COLLECTION",
     description: "We know how large objects will act, but things on a small scale.",
