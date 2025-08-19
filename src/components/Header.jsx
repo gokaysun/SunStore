@@ -10,11 +10,11 @@ export default function Header() {
           <div className="flex gap-6 items-center pl-6">
             <div className="flex items-center gap-2">
               <img src="/src/assets/Desk_Phone.png" alt="Phone" className="w-4 h-4" />
-              <span className="text-sm font-bold tracking-[0.2px]">(225) 555-0118</span>
+              <span className="text-sm font-bold tracking-[0.2px]">(537) 525-5620</span>
             </div>
             <div className="flex items-center gap-2">
               <img src="/src/assets/Desk_Mail.png" alt="Mail" className="w-4 h-4" />
-              <span className="text-sm font-bold tracking-[0.2px]">michelle.rivera@example.com</span>
+              <span className="text-sm font-bold tracking-[0.2px]">gokaysun1@gmail.com</span>
             </div>
           </div>
 
@@ -25,10 +25,18 @@ export default function Header() {
           <div className="flex items-center gap-4 pr-6">
             <span className="text-sm font-bold tracking-[0.2px]">Follow Us :</span>
             <div className="flex gap-3">
-              <a href="#"><img src="/src/assets/Desk_Instagram.png" alt="Instagram" className="w-10 h-10" /></a>
-              <a href="#"><img src="/src/assets/Desk_Youtube.png" alt="YouTube" className="w-10 h-10" /></a>
-              <a href="#"><img src="/src/assets/Desk_Facebook.png" alt="Facebook" className="w-10 h-10" /></a>
-              <a href="#"><img src="/src/assets/Desk_Twitter.png" alt="Twitter" className="w-10 h-10" /></a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <img src="/src/assets/Desk_Instagram.png" alt="Instagram" className="w-10 h-10" />
+              </a>
+              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <img src="/src/assets/Desk_Youtube.png" alt="YouTube" className="w-10 h-10" />
+              </a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <img src="/src/assets/Desk_Facebook.png" alt="Facebook" className="w-10 h-10" />
+              </a>
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <img src="/src/assets/Desk_Twitter.png" alt="Twitter" className="w-10 h-10" />
+              </a>
             </div>
           </div>
         </div>
@@ -39,26 +47,29 @@ export default function Header() {
         <div className="flex w-full justify-between items-center px-6">
           {/* Sol logo kısmı */}
           <div className="flex items-center gap-2">
-            <a href="#" className="font-bold text-lg text-gray-800 hover:text-blue-500">Bandage</a>
+            <a href="#" className="font-bold text-lg text-gray-800 hover:text-blue-500">SunStore</a>
           </div>
 
           {/* Navigation links */}
           <nav className="flex gap-6 text-[14px] font-medium">
-  <a href="#" className="!text-[#737373] hover:text-blue-500">Home</a>
-  <a href="#" className="!text-[#737373] hover:text-blue-500">Shop</a>
-  <a href="#" className="!text-[#737373] hover:text-blue-500">About</a>
-  <a href="#" className="!text-[#737373] hover:text-blue-500">Blog</a>
-  <a href="#" className="!text-[#737373] hover:text-blue-500">Contact</a>
-  <a href="#" className="!text-[#737373] hover:text-blue-500">Pages</a>
-</nav>
-
+            <a href="#" className="!text-[#737373] hover:text-blue-500">Home</a>
+            <a href="#" className="!text-[#737373] hover:text-blue-500">Shop</a>
+            <a href="#" className="!text-[#737373] hover:text-blue-500">About</a>
+            <a href="#" className="!text-[#737373] hover:text-blue-500">Blog</a>
+            <a href="#" className="!text-[#737373] hover:text-blue-500">Contact</a>
+            <a href="#" className="!text-[#737373] hover:text-blue-500">Pages</a>
+          </nav>
 
           {/* Sağ login + ikonlar */}
-          <div className="flex items-center gap-2">
-            <a href="#" className="flex items-center gap-1 hover:text-blue-500">
-              <img src="src/assets/Desk_User.png" alt="User" className="w-4 h-4" />
-              <span className="text-[14px] font-semibold">Login / Register</span>
-            </a>
+          <div className="flex items-center gap-3">
+            <div className="hidden md:flex items-center gap-2 mr-2">
+              <button className="px-4 h-9 text-[14px] font-semibold text-[#737373] border border-[#737373]/40 rounded-[5px] hover:bg-gray-100 transition">
+                Login
+              </button>
+              <button className="px-4 h-9 text-[14px] font-semibold text-white bg-[#2DC071] rounded-[5px] hover:brightness-95 transition">
+                Register
+              </button>
+            </div>
             <a href="#" className="hover:opacity-80">
               <img src="src/assets/Desk_Search.png" alt="Search" className="w-12 h-12" />
             </a>

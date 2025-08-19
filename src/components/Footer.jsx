@@ -14,7 +14,7 @@ export default function Footer() {
               {/* Brand */}
               <div className="flex flex-col items-start gap-[10px] w-[236px] h-[58px]">
                 <div className="relative w-[187px] h-[58px]">
-                  <h3 className="absolute left-0 top-[13px] text-[#252B42] font-[700] text-[24px] leading-[32px] tracking-[0.1px]">Bandage</h3>
+                  <h3 className="absolute left-0 top-[13px] text-[#252B42] font-[700] text-[24px] leading-[32px] tracking-[0.1px]">SunStore</h3>
                 </div>
               </div>
               {/* Social icons */}
