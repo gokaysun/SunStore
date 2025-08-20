@@ -1,20 +1,22 @@
 import React, { useState, useEffect } from "react";
+import HPGirlBag from "../assets/HPcantaliKadin.jpg";
+import HPGirlBag3 from "../assets/HPcantaliKadin3.png";
 
 const slides = [
   {
-    image: "src/assets/HPcantaliKadin.jpg",
+    image: HPGirlBag,
     heading: "SUMMER 2025",
     subheading: "NEW COLLECTION",
     description: "We know how large objects will act, but things on a small scale.",
   },
   {
-    image: "src/assets/HPcantaliKadin.jpg",
+    image: HPGirlBag,
     heading: "SUMMER 2025",
     subheading: "NEW COLLECTION",
     description: "We know how large objects will act, but things on a small scale.",
   },
   {
-    image: "src/assets/HPcantaliKadin3.png",
+    image: HPGirlBag3,
     heading: "SUMMER 2025",
     subheading: "NEW COLLECTION",
     description: "We know how large objects will act, but things on a small scale.",
