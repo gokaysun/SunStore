@@ -1,5 +1,14 @@
 import React from "react";
 import HeroSlider from "./HeroSlider";
+import DeskPhone from "../assets/Desk_Phone.png";
+import DeskMail from "../assets/Desk_Mail.png";
+import DeskInstagram from "../assets/Desk_Instagram.png";
+import DeskYoutube from "../assets/Desk_Youtube.png";
+import DeskFacebook from "../assets/Desk_Facebook.png";
+import DeskTwitter from "../assets/Desk_Twitter.png";
+import DeskSearch from "../assets/Desk_Search.png";
+import DeskSepet from "../assets/Desk_Sepet.png";
+import DeskFavori from "../assets/Desk_Favori.png";
 
 export default function Header() {
   return (
@@ -9,11 +18,11 @@ export default function Header() {
         <div className="flex w-full items-center justify-between h-full px-0">
           <div className="flex gap-6 items-center pl-6">
             <div className="flex items-center gap-2">
-              <img src="/src/assets/Desk_Phone.png" alt="Phone" className="w-4 h-4" />
+              <img src={DeskPhone} alt="Phone" className="w-4 h-4" />
               <span className="text-sm font-bold tracking-[0.2px]">(537) 525-5620</span>
             </div>
             <div className="flex items-center gap-2">
-              <img src="/src/assets/Desk_Mail.png" alt="Mail" className="w-4 h-4" />
+              <img src={DeskMail} alt="Mail" className="w-4 h-4" />
               <span className="text-sm font-bold tracking-[0.2px]">gokaysun1@gmail.com</span>
             </div>
           </div>
@@ -26,16 +35,16 @@ export default function Header() {
             <span className="text-sm font-bold tracking-[0.2px]">Follow Us :</span>
             <div className="flex gap-3">
               <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <img src="/src/assets/Desk_Instagram.png" alt="Instagram" className="w-10 h-10" />
+                <img src={DeskInstagram} alt="Instagram" className="w-10 h-10" />
               </a>
               <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                <img src="/src/assets/Desk_Youtube.png" alt="YouTube" className="w-10 h-10" />
+                <img src={DeskYoutube} alt="YouTube" className="w-10 h-10" />
               </a>
               <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <img src="/src/assets/Desk_Facebook.png" alt="Facebook" className="w-10 h-10" />
+                <img src={DeskFacebook} alt="Facebook" className="w-10 h-10" />
               </a>
               <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <img src="/src/assets/Desk_Twitter.png" alt="Twitter" className="w-10 h-10" />
+                <img src={DeskTwitter} alt="Twitter" className="w-10 h-10" />
               </a>
             </div>
           </div>
@@ -71,13 +80,13 @@ export default function Header() {
               </button>
             </div>
             <a href="#" className="hover:opacity-80">
-              <img src="src/assets/Desk_Search.png" alt="Search" className="w-12 h-12" />
+              <img src={DeskSearch} alt="Search" className="w-12 h-12" />
             </a>
             <a href="#" className="hover:opacity-80">
-              <img src="src/assets/Desk_Sepet.png" alt="Cart" className="w-12 h-12" />
+              <img src={DeskSepet} alt="Cart" className="w-12 h-12" />
             </a>
             <a href="#" className="hover:opacity-80">
-              <img src="src/assets/Desk_Favori.png" alt="Wishlist" className="w-12 h-12" />
+              <img src={DeskFavori} alt="Wishlist" className="w-12 h-12" />
             </a>
           </div>
         </div>
