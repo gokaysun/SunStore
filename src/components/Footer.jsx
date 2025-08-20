@@ -1,4 +1,7 @@
 import React from "react";
+import facebook from "../assets/facebook.png";
+import instagram from "../assets/instagram.png";
+import twitter from "../assets/twitter.png";
 
 export default function Footer() {
   return (
@@ -21,13 +24,13 @@ export default function Footer() {
               <div className="flex flex-col items-center w-[236px] h-6">
                 <div className="flex flex-row justify-center items-center gap-5 w-[112px] h-6">
                   <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="cursor-pointer">
-                    <img src="src/assets/facebook.png" alt="Facebook" className="w-6 h-6" />
+                    <img src={facebook} alt="Facebook" className="w-6 h-6" />
                   </a>
                   <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="cursor-pointer">
-                    <img src="src/assets/instagram.png" alt="Instagram" className="w-6 h-6" />
+                    <img src={instagram} alt="Instagram" className="w-6 h-6" />
                   </a>
                   <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="cursor-pointer">
-                    <img src="src/assets/twitter.png" alt="Twitter" className="w-6 h-6" />
+                    <img src={twitter} alt="Twitter" className="w-6 h-6" />
                   </a>
                 </div>
               </div>
@@ -123,19 +126,19 @@ export default function Footer() {
         {/* Logo ve sosyal medya */}
         <div className="flex flex-col items-start max-w-md mx-auto mb-6">
           <img
-            src="public/images/Bandage.png"
+            src="/images/Bandage.png"
             alt="Logo"
             className="mb-4 max-w-[200px] h-auto"
           />
           <div className="flex justify-start space-x-4">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="cursor-pointer">
-              <img src="src/assets/facebook.png" alt="Facebook" className="h-6 w-6" />
+              <img src={facebook} alt="Facebook" className="h-6 w-6" />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="cursor-pointer">
-              <img src="src/assets/instagram.png" alt="Instagram" className="h-6 w-6" />
+              <img src={instagram} alt="Instagram" className="h-6 w-6" />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="cursor-pointer">
-              <img src="src/assets/twitter.png" alt="Twitter" className="h-6 w-6" />
+              <img src={twitter} alt="Twitter" className="h-6 w-6" />
             </a>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import asyaliCift from "../assets/asyaliCift.png";
 
 const CallToAction = () => {
   return (
@@ -11,7 +12,7 @@ const CallToAction = () => {
           <div className="relative w-[704px] h-[682px] flex-none order-0 overflow-visible">
             {/* asian-woman-man-with-winter-clothes 1 */}
             <img
-              src="src/assets/asyaliCift.png"
+              src={asyaliCift}
               alt="Special Offer"
               className="absolute w-[725px] h-[774px] left-[-137px] top-[-211px] object-cover"
             />
@@ -68,7 +69,7 @@ const CallToAction = () => {
   {/* Mobil Görsel */}
   <div className="w-full h-[300px] mt-8">
     <img
-      src="src/assets/asyaliCift.png"
+      src={asyaliCift}
       alt="Special Offer"
       className="w-full h-full object-cover rounded-lg"
     />

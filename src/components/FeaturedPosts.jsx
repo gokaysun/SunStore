@@ -1,4 +1,10 @@
 import React from "react";
+import tablo from "../assets/tablo.png";
+import Frame1 from "../assets/Frame1.png";
+import tablo2 from "../assets/tablo2.png";
+import Frame2 from "../assets/Frame2.png";
+import tablo3 from "../assets/tablo3.png";
+import Frame3 from "../assets/Frame3.png";
 
 export default function FeaturedPosts() {
   return (
@@ -100,7 +106,7 @@ export default function FeaturedPosts() {
                   <div className="flex items-center gap-2 text-[#737373] text-[12px]">22 April 2021</div>
                   <div className="flex items-center gap-2 text-[#737373] text-[12px]">10 comments</div>
                 </div>
-                <a className="flex items-center gap-2 text-[#737373] font-[700] text-[14px] leading-6 cursor-pointer">
+                <a className="flex items-center gap-2 text-[#73773] font-[700] text-[14px] leading-6 cursor-pointer">
                   Learn More <span className="text-[#23A6F0]">›</span>
                 </a>
               </div>
@@ -123,16 +129,16 @@ export default function FeaturedPosts() {
         {/* Görseller */}
         <div className="flex flex-col items-center gap-4">
           {/* İlk Görsel */}
-          <img src="src/assets/tablo.png" alt="ilk" className="w-full max-w-sm" />
-          <img src="src/assets/Frame1.png" alt="frame" className="w-full max-w-sm" />
+          <img src={tablo} alt="ilk" className="w-full max-w-sm" />
+          <img src={Frame1} alt="frame" className="w-full max-w-sm" />
 
           {/* İkinci Görsel */}
-          <img src="src/assets/tablo2.png" alt="ikinci" className="w-full max-w-sm" />
-          <img src="src/assets/Frame2.png" alt="frame" className="w-full max-w-sm" />
+          <img src={tablo2} alt="ikinci" className="w-full max-w-sm" />
+          <img src={Frame2} alt="frame" className="w-full max-w-sm" />
 
           {/* Üçüncü Görsel */}
-          <img src="src/assets/tablo3.png" alt="üçüncü" className="w-full max-w-sm" />
-          <img src="src/assets/Frame3.png" alt="frame" className="w-full max-w-sm" />
+          <img src={tablo3} alt="üçüncü" className="w-full max-w-sm" />
+          <img src={Frame3} alt="frame" className="w-full max-w-sm" />
         </div>
       </div>
     </section>
