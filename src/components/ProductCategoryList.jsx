@@ -1,45 +1,53 @@
 import React from "react";
+import imgKivircik from "../assets/kivircik.png";
+import imgCocuk2 from "../assets/cocuk2.png";
+import imgPembeSweat from "../assets/pembeSweat.png";
+import imgUzunEtekli from "../assets/uzunEtekli.png";
+import imgDesktop6 from "../assets/WebFoto/Desktop6.png";
+import imgDesktop5 from "../assets/WebFoto/Desktop5.png";
+import imgSweetshirtDesktop from "../assets/WebFoto/SweetshirtDesktop.png";
+import imgSiyahiCocukDesktop from "../assets/WebFoto/SiyahiCocukDesktop.png";
 
 const products = [
   {
     title: "Graphic Design",
     subtitle: "English Department",
-    image: "src/assets/kivircik.png",
+    image: imgKivircik,
   },
   {
     title: "Graphic Design",
     subtitle: "English Department",
-    image: "src/assets/cocuk2.png",
+    image: imgCocuk2,
   },
   {
     title: "Graphic Design",
     subtitle: "English Department",
-    image: "src/assets/pembeSweat.png",
+    image: imgPembeSweat,
   },
   {
     title: "Graphic Design",
     subtitle: "English Department",
-    image: "src/assets/uzunEtekli.png",
+    image: imgUzunEtekli,
   },
   {
     title: "Graphic Design",
     subtitle: "English Department",
-    image: "src/assets/WebFoto/Desktop6.png",
+    image: imgDesktop6,
   },
   {
     title: "Graphic Design",
     subtitle: "English Department",
-    image: "src/assets/WebFoto/Desktop5.png",
+    image: imgDesktop5,
   },
   {
     title: "Graphic Design",
     subtitle: "English Department",
-    image: "src/assets/WebFoto/SweetshirtDesktop.png",
+    image: imgSweetshirtDesktop,
   },
   {
     title: "Graphic Design",
     subtitle: "English Department",
-    image: "src/assets/WebFoto/SiyahiCocukDesktop.png",
+    image: imgSiyahiCocukDesktop,
   },
 ];
 
