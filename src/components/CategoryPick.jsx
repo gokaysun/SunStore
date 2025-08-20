@@ -1,10 +1,14 @@
 import React from "react";
+import imgCocuk from "../assets/cocuk.png";
+import imgKiz from "../assets/kiz.png";
+import imgHirkaliKiz from "../assets/hirkaliKiz.png";
+import imgSariGomlek from "../assets/sariGomlek.png";
 
 const categories = [
-  { name: "MEN", image: "src/assets/cocuk.png" },
-  { name: "WOMEN", image: "src/assets/kiz.png" },
-  { name: "ACCESSORIES", image: "src/assets/hirkaliKiz.png" },
-  { name: "KIDS", image: "src/assets/sariGomlek.png" },
+  { name: "MEN", image: imgCocuk },
+  { name: "WOMEN", image: imgKiz },
+  { name: "ACCESSORIES", image: imgHirkaliKiz },
+  { name: "KIDS", image: imgSariGomlek },
 ];
 
 function Card({ src, label, className = "", buttonOffset = "left-8" }) {
