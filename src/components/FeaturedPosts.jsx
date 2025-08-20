@@ -123,16 +123,16 @@ export default function FeaturedPosts() {
         {/* Görseller */}
         <div className="flex flex-col items-center gap-4">
           {/* İlk Görsel */}
-          <img src="/images/tablo.png" alt="ilk" className="w-full max-w-sm" />
-          <img src="/images/Frame1.png" alt="frame" className="w-full max-w-sm" />
+          <img src="src/assets/tablo.png" alt="ilk" className="w-full max-w-sm" />
+          <img src="src/assets/Frame1.png" alt="frame" className="w-full max-w-sm" />
 
           {/* İkinci Görsel */}
-          <img src="/images/tablo2.png" alt="ikinci" className="w-full max-w-sm" />
-          <img src="/images/Frame2.png" alt="frame" className="w-full max-w-sm" />
+          <img src="src/assets/tablo2.png" alt="ikinci" className="w-full max-w-sm" />
+          <img src="src/assets/Frame2.png" alt="frame" className="w-full max-w-sm" />
 
           {/* Üçüncü Görsel */}
-          <img src="/images/tablo3.png" alt="üçüncü" className="w-full max-w-sm" />
-          <img src="/images/Frame3.png" alt="frame" className="w-full max-w-sm" />
+          <img src="src/assets/tablo3.png" alt="üçüncü" className="w-full max-w-sm" />
+          <img src="src/assets/Frame3.png" alt="frame" className="w-full max-w-sm" />
         </div>
       </div>
     </section>
