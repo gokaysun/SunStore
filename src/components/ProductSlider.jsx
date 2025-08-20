@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import yesilEkranCocuk from "../assets/yesilEkranCocuk.png";
 
 const slides = [
   {
     backgroundColor: "#23856D",
-    childImg: "src/assets/yesilEkranCocuk.png",
+    childImg: yesilEkranCocuk,
     season: "SUMMER 2025",
     title: "Vita Classic\nProduct",
     description: "we know how large objects \nwill act, but things on a \nsmall scale",
@@ -11,7 +12,7 @@ const slides = [
   },
   {
     backgroundColor: "#1F6653",
-    childImg: "src/assets/yesilEkranCocuk.png",
+    childImg: yesilEkranCocuk,
     season: "FALL 2025",
     title: "Vita Modern\nProduct",
     description: "Discover new trends \nand styles \nfor the season",

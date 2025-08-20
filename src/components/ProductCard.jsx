@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import ProductSlider from "./ProductSlider";
+import yesilEkranCocuk from "../assets/yesilEkranCocuk.png";
 
 // Desktop slides data for ProductCard
 const pcSlides = [
   {
     backgroundColor: "#23856D",
-    childImg: "src/assets/yesilEkranCocuk.png",
+    childImg: yesilEkranCocuk,
     season: "SUMMER 2025",
     title: "Vita Classic\nProduct",
     description: "we know how large objects\nwill act, but things on a\nsmall scale",
@@ -13,7 +14,7 @@ const pcSlides = [
   },
   {
     backgroundColor: "#1F6653",
-    childImg: "src/assets/yesilEkranCocuk.png",
+    childImg: yesilEkranCocuk,
     season: "FALL 2025",
     title: "Vita Modern\nProduct",
     description: "Discover new trends\nand styles\nfor the season",
