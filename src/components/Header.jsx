@@ -9,11 +9,11 @@ export default function Header() {
         <div className="flex w-full items-center justify-between h-full px-0">
           <div className="flex gap-6 items-center pl-6">
             <div className="flex items-center gap-2">
-              <img src="/src/assets/Desk_Phone.png" alt="Phone" className="w-4 h-4" />
+              <img src="/images/Desk_Phone.png" alt="Phone" className="w-4 h-4" />
               <span className="text-sm font-bold tracking-[0.2px]">(537) 525-5620</span>
             </div>
             <div className="flex items-center gap-2">
-              <img src="/src/assets/Desk_Mail.png" alt="Mail" className="w-4 h-4" />
+              <img src="/images/Desk_Mail.png" alt="Mail" className="w-4 h-4" />
               <span className="text-sm font-bold tracking-[0.2px]">gokaysun1@gmail.com</span>
             </div>
           </div>
@@ -26,16 +26,16 @@ export default function Header() {
             <span className="text-sm font-bold tracking-[0.2px]">Follow Us :</span>
             <div className="flex gap-3">
               <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <img src="/src/assets/Desk_Instagram.png" alt="Instagram" className="w-10 h-10" />
+                <img src="/images/Desk_Instagram.png" alt="Instagram" className="w-10 h-10" />
               </a>
               <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                <img src="/src/assets/Desk_Youtube.png" alt="YouTube" className="w-10 h-10" />
+                <img src="/images/Desk_Youtube.png" alt="YouTube" className="w-10 h-10" />
               </a>
               <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <img src="/src/assets/Desk_Facebook.png" alt="Facebook" className="w-10 h-10" />
+                <img src="/images/Desk_Facebook.png" alt="Facebook" className="w-10 h-10" />
               </a>
               <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <img src="/src/assets/Desk_Twitter.png" alt="Twitter" className="w-10 h-10" />
+                <img src="/images/Desk_Twitter.png" alt="Twitter" className="w-10 h-10" />
               </a>
             </div>
           </div>
@@ -71,13 +71,13 @@ export default function Header() {
               </button>
             </div>
             <a href="#" className="hover:opacity-80">
-              <img src="src/assets/Desk_Search.png" alt="Search" className="w-12 h-12" />
+              <img src="/images/Desk_Search.png" alt="Search" className="w-12 h-12" />
             </a>
             <a href="#" className="hover:opacity-80">
-              <img src="src/assets/Desk_Sepet.png" alt="Cart" className="w-12 h-12" />
+              <img src="/images/Desk_Sepet.png" alt="Cart" className="w-12 h-12" />
             </a>
             <a href="#" className="hover:opacity-80">
-              <img src="src/assets/Desk_Favori.png" alt="Wishlist" className="w-12 h-12" />
+              <img src="/images/Desk_Favori.png" alt="Wishlist" className="w-12 h-12" />
             </a>
           </div>
         </div>
