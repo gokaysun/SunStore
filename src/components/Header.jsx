@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSlider from "./HeroSlider";
+import { Link } from "react-router-dom";
 import DeskPhone from "../assets/Desk_Phone.png";
 import DeskMail from "../assets/Desk_Mail.png";
 import DeskInstagram from "../assets/Desk_Instagram.png";
@@ -56,13 +56,13 @@ export default function Header() {
         <div className="flex w-full justify-between items-center px-6">
           {/* Sol logo kısmı */}
           <div className="flex items-center gap-2">
-            <a href="#" className="font-bold text-lg text-gray-800 hover:text-blue-500">SunStore</a>
+            <Link to="/" className="font-bold text-lg text-gray-800 hover:text-blue-500">SunStore</Link>
           </div>
 
           {/* Navigation links */}
           <nav className="flex gap-6 text-[14px] font-medium">
-            <a href="#" className="!text-[#737373] hover:text-blue-500">Home</a>
-            <a href="#" className="!text-[#737373] hover:text-blue-500">Shop</a>
+            <Link to="/" className="!text-[#737373] hover:text-blue-500">Home</Link>
+            <Link to="/shop" className="!text-[#737373] hover:text-blue-500">Shop</Link>
             <a href="#" className="!text-[#737373] hover:text-blue-500">About</a>
             <a href="#" className="!text-[#737373] hover:text-blue-500">Blog</a>
             <a href="#" className="!text-[#737373] hover:text-blue-500">Contact</a>
@@ -95,7 +95,7 @@ export default function Header() {
       {/* Mobil Header */}
       <div className="lg:hidden flex items-center justify-between w-full pt-4 pb-4 mt-[116px] bg-white px-0">
         <div className="pl-6 font-bold text-gray-700 text-[18px] leading-[24px] tracking-widest">
-          <a href="#" className="hover:text-blue-500">BANDAGE</a>
+          <Link to="/" className="hover:text-blue-500">BANDAGE</Link>
         </div>
 
         <div className="flex items-center gap-[25px] pr-6" style={{ width: "168px" }}>
@@ -108,19 +108,31 @@ export default function Header() {
 
       {/* Mobil Menü Linkleri */}
       <nav className="lg:hidden w-[123px] h-[270px] mx-auto mt-4 flex flex-col items-center justify-between">
-        {["HOME", "PRODUCT", "PRICING", "CONTACT"].map((item) => (
-          <a
-            key={item}
-            href={`#${item.toLowerCase()}`}
-            className="font-montserrat font-normal text-[24px] leading-[36px] tracking-[0.2px] text-center text-gray-700"
-          >
-            {item}
-          </a>
+        {[
+          { label: "HOME", to: "/" },
+          { label: "SHOP", to: "/shop" },
+          { label: "PRICING", to: "#pricing" },
+          { label: "CONTACT", to: "#contact" },
+        ].map((item) => (
+          item.to.startsWith("/") ? (
+            <Link
+              key={item.label}
+              to={item.to}
+              className="font-montserrat font-normal text-[24px] leading-[36px] tracking-[0.2px] text-center text-gray-700"
+            >
+              {item.label}
+            </Link>
+          ) : (
+            <a
+              key={item.label}
+              href={item.to}
+              className="font-montserrat font-normal text-[24px] leading-[36px] tracking-[0.2px] text-center text-gray-700"
+            >
+              {item.label}
+            </a>
+          )
         ))}
       </nav>
-
-      {/* Slider */}
-      <HeroSlider />
     </header>
   );
 }

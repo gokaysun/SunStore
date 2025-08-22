@@ -1,40 +1,51 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Shop from "./pages/Shop";
 import CategoryPick from "./components/CategoryPick";
-import ProductCategoryList from "./components/ProductCategoryList";  // Buraya ekledik
-import './App.css';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import ProductCategoryList from "./components/ProductCategoryList";  
 import ProductCard from "./components/ProductCard";
 import CallToAction from "./components/CallToAction";
 import FeaturedPosts from "./components/FeaturedPosts";
-import Footer from "./components/Footer";
-
+import './App.css';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
-    <div className="max-w-md mx-auto bg-white min-h-screen">
-      {/* Mobil Header */}
+    <div className="bg-white min-h-screen">
+      {/* Global Header (desktop has fixed bars) */}
       <Header />
 
+      {/* Routed content with offset under fixed desktop header */}
+      <main className="mx-auto max-w-md lg:max-w-none lg:pt-[116px]">
+        <Routes>
+          <Route path="/" element={
+            <div className="w-full mx-auto">
+              {/* Mobil Header */}
+              {/* Category Pick */}
+              <CategoryPick />
 
-      {/* Category Pick */}
-      <CategoryPick />
+              {/* Product Category List */}
+              <ProductCategoryList />
+              
+              {/* Product Card */}
+              <ProductCard />
 
-      {/* Product Category List */}
-      <ProductCategoryList />
-      
-      {/* Product Card */}
-      <ProductCard />
+              {/* Call To Action */}
+              <CallToAction />
 
-      {/* Call To Action */}
-      <CallToAction />
+              <FeaturedPosts />
+            </div>
+          } />
+          <Route path="/shop" element={<Shop />} />
+        </Routes>
+      </main>
 
-      <FeaturedPosts />
-
+      {/* Global Footer */}
       <Footer />
-
-      {/* İstersen buraya fotoğraflar veya diğer içerikler ekleyebilirsin */}
     </div>
   );
 }
