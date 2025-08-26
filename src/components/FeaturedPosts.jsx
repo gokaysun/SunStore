@@ -10,7 +10,7 @@ export default function FeaturedPosts() {
   return (
     <section className="bg-white w-full">
       {/* Desktop (lg+) */}
-      <div className="hidden lg:block relative mx-auto w-[1440px] h-[1044px] bg-white transform translate-y-[100px] -translate-x-[450px]">
+      <div className="hidden lg:block relative mx-auto w-[1440px] h-[1044px] bg-white transform translate-y-[100px] -translate-x-[100px]">
         {/* container centered to 1050px */}
         <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[1050px] h-[1044px] flex flex-col items-center py-[112px] gap-[80px]">
           {/* header row */}

@@ -5,7 +5,7 @@ const CallToAction = () => {
   return (
     <div className="w-full">
       {/* Desktop View */}
-      <div className="hidden lg:block relative mx-auto w-[1440px] h-[682px] bg-white transform translate-y-[200px] -translate-x-[450px]">
+      <div className="hidden lg:block relative mx-auto w-[1440px] h-[682px] bg-white transform translate-y-[200px] -translate-x-[50px]">
         {/* row (absolute full) */}
         <div className="absolute inset-0 flex flex-row justify-end items-center gap-[30px] p-0">
           {/* col-md-6 (image area) */}

@@ -27,7 +27,7 @@ function Card({ src, label, className = "", buttonOffset = "left-8" }) {
 
 export default function CategoryPick() {
   return (
-    <section className="w-full bg-[#FAFAFA]">
+    <section className="w-full bg-white -mt-[100px]">
       {/* Outer canvas per spec: 1440x770 on desktop */}
       <div className="max-w-[1440px] mx-auto px-4 py-8 lg:py-20">
         {/* Title */}

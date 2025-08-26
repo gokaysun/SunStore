@@ -116,7 +116,7 @@ export default function ProductCategoryList() {
 
         {/* Desktop layout: 4x2 grid, gap 30px, each card fixed size; centered for equal side margins */}
         <div className="hidden lg:block">
-          <div className="mx-auto w-[1049px] lg:relative lg:left-[-300px]">
+          <div className="mx-auto w-[1049px] lg:relative lg:left-0">
             <div className="grid grid-cols-4 gap-[30px]">
               {products.slice(0, 4).map((p, i) => (
                 <ProductCard key={`top-${i}`} product={p} />

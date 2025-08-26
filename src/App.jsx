@@ -4,11 +4,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
-import CategoryPick from "./components/CategoryPick";
-import ProductCategoryList from "./components/ProductCategoryList";  
-import ProductCard from "./components/ProductCard";
-import CallToAction from "./components/CallToAction";
-import FeaturedPosts from "./components/FeaturedPosts";
 import './App.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -22,24 +17,7 @@ function App() {
       {/* Routed content with offset under fixed desktop header */}
       <main className="mx-auto max-w-md lg:max-w-none lg:pt-[116px]">
         <Routes>
-          <Route path="/" element={
-            <div className="w-full mx-auto">
-              {/* Mobil Header */}
-              {/* Category Pick */}
-              <CategoryPick />
-
-              {/* Product Category List */}
-              <ProductCategoryList />
-              
-              {/* Product Card */}
-              <ProductCard />
-
-              {/* Call To Action */}
-              <CallToAction />
-
-              <FeaturedPosts />
-            </div>
-          } />
+          <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
         </Routes>
       </main>

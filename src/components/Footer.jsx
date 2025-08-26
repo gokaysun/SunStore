@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-white w-full">
       {/* Desktop (lg+) */}
-      <div className="hidden lg:block relative mx-auto w-[1440px] h-[488px] bg-white transform -translate-x-[480px]">
+      <div className="hidden lg:block relative mx-auto w-[1440px] h-[488px] bg-white transform -translate-x-[180px]">
         {/* Top light gray band */}
         <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[1440px] h-[142px] bg-[#FAFAFA]">
           {/* container */}

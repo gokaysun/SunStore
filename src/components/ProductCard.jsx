@@ -40,9 +40,9 @@ export default function ProductCard() {
 
       {/* Desktop */}
       <section className="hidden lg:block w-full bg-white">
-        {/* Outer card: 1440x709, border, radius */}
+        {/* Outer card: 1540x709, border, radius */}
         <div
-          className="relative w-[1440px] h-[709px] border border-[#DEDEDE] rounded-[5px] overflow-hidden lg:-ml-[500px]"
+          className="relative w-[1540px] h-[709px] border border-[#DEDEDE] rounded-[5px] overflow-hidden lg:-ml-[200px]"
           style={{ backgroundColor }}
         >
           {/* Content container: left anchored to match visual spec */}

@@ -39,7 +39,7 @@ export default function HeroSlider() {
   return (
     <div className="w-full">
       {/* Desktop (lg+) exact layout */}
-      <div className="hidden lg:block relative mx-auto w-[1440px] h-[716px] mt-[136px] bg-white border border-[#DEDEDE] rounded-[5px] overflow-hidden transform -translate-x-[487px] -translate-y-[53px]">
+      <div className="hidden lg:block relative mx-auto w-[1440px] h-[716px] mt-[136px] bg-white border border-[#DEDEDE] rounded-[5px] overflow-hidden transform -translate-x-[110px] -translate-y-[170px]">
         {/* carousel-inner / slide with background */}
         <div
           className="absolute inset-0 w-full h-full"
