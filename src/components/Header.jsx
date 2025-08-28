@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import DeskPhone from "../assets/Desk_Phone.png";
 import DeskMail from "../assets/Desk_Mail.png";
 import DeskInstagram from "../assets/Desk_Instagram.png";
@@ -11,10 +11,12 @@ import DeskSepet from "../assets/Desk_Sepet.png";
 import DeskFavori from "../assets/Desk_Favori.png";
 
 export default function Header() {
+  const location = useLocation();
+  const isShop = location.pathname === "/shop";
   return (
     <header className="w-full font-montserrat relative">
       {/* Üst desktop bar */}
-      <div className="hidden lg:flex bg-[#252B42] text-white h-[58px] w-screen fixed top-0 left-0 z-50">
+      <div className={`hidden lg:flex ${isShop ? "bg-[#23856D]" : "bg-[#252B42]"} text-white h-[58px] w-screen fixed top-0 left-0 z-50`}>
         <div className="flex w-full items-center justify-between h-full px-0">
           <div className="flex gap-6 items-center pl-6">
             <div className="flex items-center gap-2">

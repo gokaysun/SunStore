@@ -1,6 +1,11 @@
 import React from "react";
 import ProductCategoryList from "../components/ProductCategoryList";
 import ProductSlider from "../components/ProductSlider";
+import ShopPageLine from "../components/ShopPageLine";
+import ShopCloths from "../components/ShopCloths";
+import ShopShowing from "../components/ShopShowing";
+import ShopGraphic from "../components/ShopGraphic";
+import ShopClient from "../components/ShopClient";
 
 export default function Shop() {
   return (
@@ -30,18 +35,13 @@ export default function Shop() {
         </div>
       </section>
 
-      {/* Mobile view */}
-      <section className="lg:hidden px-4 py-6">
-        <header className="mb-6 text-left">
-          <h1 className="text-black text-2xl font-bold leading-snug">Shop</h1>
-          <p className="text-[#737373] leading-relaxed">Discover our products and best offers.</p>
-        </header>
-
-        {/* Products grid / slider reuse */}
-        <div className="space-y-8">
-          <ProductSlider />
-          <ProductCategoryList />
-        </div>
+      {/* Mobile view: ShopPageLine + ShopCloths + ShopShowing */}
+      <section className="lg:hidden w-full">
+        <ShopPageLine />
+        <ShopCloths />
+        <ShopShowing />
+        <ShopGraphic />
+        <ShopClient />
       </section>
     </main>
   );
