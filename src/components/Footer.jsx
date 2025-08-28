@@ -9,7 +9,7 @@ export default function Footer() {
       {/* Desktop (lg+) */}
       <div className="hidden lg:block relative mx-auto w-[1440px] h-[488px] bg-white transform -translate-x-[180px]">
         {/* Top light gray band */}
-        <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[1440px] h-[142px] bg-[#FAFAFA]">
+        <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[1440px] h-[142px] bg-white">
           {/* container */}
           <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[1050px] h-[138px] flex flex-col items-start py-10">
             {/* row */}

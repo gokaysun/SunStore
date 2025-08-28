@@ -2,10 +2,11 @@ import React from "react";
 
 export default function ShopPageLine() {
   return (
-    // Container: 414x202, bg #FAFAFA, vertical center with 24px padding
-    <section className="w-full lg:w-auto">
+    // Container wraps mobile and desktop variants
+    <section className="w-full">
+      {/* Mobile variant (unchanged) */}
       <div
-        className="relative mx-auto w-[414px] h-[202px] bg-[#FAFAFA] flex flex-col items-center py-6"
+        className="relative mx-auto w-[414px] h-[202px] bg-[#FAFAFA] flex flex-col items-center py-6 lg:hidden"
         style={{ opacity: 1 }}
       >
         {/* row: column layout with 30px gap (height 154) */}
@@ -47,6 +48,55 @@ export default function ShopPageLine() {
               <span className="w-[37px] h-6 font-montserrat font-bold text-[14px] leading-6 tracking-[0.2px] text-[#737373] text-center">
                 Shop
               </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop variant */}
+      <div className="hidden lg:flex w-full justify-center bg-[#FAFAFA]">
+        {/* container: 1440x92, centered, py-6 = 24px */}
+        <div className="w-[1440px] h-[92px] flex flex-col items-center py-6 bg-[#FAFAFA]">
+          {/* row: 1049x44, row layout, gap-30 */}
+          <div className="w-[1049px] h-[44px] flex flex-row items-center gap-[30px] p-0">
+            {/* col-md-6 (left): 510x32 with title */}
+            <div className="w-[510px] h-8 flex flex-col items-start p-0">
+              <h2 className="w-[63px] h-8 font-montserrat font-bold text-[24px] leading-8 tracking-[0.1px] text-[#252B42] text-center">
+                Shop
+              </h2>
+            </div>
+
+            {/* col-md-6 (right): 509x44 with breadcrumb */}
+            <div className="w-[509px] h-[44px] flex flex-col items-end p-0 gap-[5px]">
+              <div className="w-[119px] h-[44px] flex flex-row items-center gap-[15px] py-[10px]">
+                {/* Home link */}
+                <a
+                  href="#"
+                  className="w-[43px] h-6 font-montserrat font-bold text-[14px] leading-6 tracking-[0.2px] text-[#252B42] text-center"
+                  aria-label="Go to home"
+                >
+                  Home
+                </a>
+
+                {/* Chevron */}
+                <span className="w-[9px] h-4 inline-flex items-center justify-center" aria-hidden>
+                  <svg
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-[9px] h-[16px]"
+                  >
+                    <path d="M2 1L7 8L2 15" stroke="#BDBDBD" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
+
+                {/* Current page */}
+                <span className="w-[37px] h-6 font-montserrat font-bold text-[14px] leading-6 tracking-[0.2px] text-[#BDBDBD] text-center">
+                  Shop
+                </span>
+              </div>
             </div>
           </div>
         </div>
